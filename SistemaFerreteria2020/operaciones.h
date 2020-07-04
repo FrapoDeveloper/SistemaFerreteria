@@ -15,6 +15,9 @@ public:
     explicit Operaciones(QWidget *parent = nullptr);
     ~Operaciones();
 
+private slots:
+    void on_id_regresarmenu_clicked();
+
 private:
     Ui::Operaciones *ui;
 };

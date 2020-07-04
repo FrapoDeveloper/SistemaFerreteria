@@ -1,5 +1,6 @@
 #include "operaciones.h"
 #include "ui_operaciones.h"
+#include "menu.h"
 
 Operaciones::Operaciones(QWidget *parent) :
     QWidget(parent),
@@ -12,11 +13,18 @@ Operaciones::Operaciones(QWidget *parent) :
     ui->id_proveedores->setStyleSheet("* { background-color: rgb(29,98,105) }");
     ui->id_lineaproductos->setStyleSheet("* { background-color: rgb(29,98,105) }");
     ui->id_trabajadores->setStyleSheet("* { background-color: rgb(29,98,105) }");
-
+    ui->id_regresarmenu->setStyleSheet("* { background-color: rgb(96,0,205) }");
 
 }
 
 Operaciones::~Operaciones()
 {
     delete ui;
+}
+
+void Operaciones::on_id_regresarmenu_clicked()
+{
+    Menu * next = new Menu();
+    next->show();
+    close();
 }

@@ -3,5 +3,7 @@
         <file>login-design.jpg</file>
         <file>design-menu.jpg</file>
         <file>operaciones-design.jpg</file>
+        <file>regreso.png</file>
+        <file>cerrar-sesion.png</file>
     </qresource>
 </RCC>

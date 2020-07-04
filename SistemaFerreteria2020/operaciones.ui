@@ -16,7 +16,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>-10</x>
+     <x>0</x>
      <y>0</y>
      <width>1121</width>
      <height>731</height>
@@ -32,7 +32,7 @@
   <widget class="QPushButton" name="id_clientes">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>110</x>
      <y>50</y>
      <width>201</width>
      <height>51</height>
@@ -53,7 +53,7 @@
   <widget class="QPushButton" name="id_productos">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>110</x>
      <y>180</y>
      <width>201</width>
      <height>51</height>
@@ -74,7 +74,7 @@
   <widget class="QPushButton" name="id_proveedores">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>110</x>
      <y>330</y>
      <width>201</width>
      <height>51</height>
@@ -95,7 +95,7 @@
   <widget class="QPushButton" name="id_lineaproductos">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>110</x>
      <y>470</y>
      <width>201</width>
      <height>51</height>
@@ -116,7 +116,7 @@
   <widget class="QPushButton" name="id_trabajadores">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>110</x>
      <y>600</y>
      <width>201</width>
      <height>51</height>
@@ -138,6 +138,35 @@
    </property>
    <property name="text">
     <string>Trabajadores</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_regresarmenu">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>10</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Regresar</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../Recursos/images.qrc">
+     <normaloff>:/regreso.png</normaloff>:/regreso.png</iconset>
    </property>
   </widget>
  </widget>
