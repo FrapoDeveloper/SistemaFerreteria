@@ -13,6 +13,7 @@ Login::Login(QWidget *parent)
     setFixedSize(ui->ventana_login->sizeHint());
     setWindowTitle("Login");
 
+
 }
 
 Login::~Login()

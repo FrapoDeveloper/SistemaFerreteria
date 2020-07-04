@@ -18,15 +18,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     login.cpp \
-    menu.cpp
+    menu.cpp \
+    operaciones.cpp
 
 HEADERS += \
     login.h \
-    menu.h
+    menu.h \
+    operaciones.h
 
 FORMS += \
     login.ui \
-    menu.ui
+    menu.ui \
+    operaciones.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="ventana_menu">
    <property name="geometry">
     <rect>
      <x>0</x>
