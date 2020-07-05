@@ -1,0 +1,12 @@
+release/comprayventa.o
+release/main.o
+release/login.o
+release/menu.o
+release/operaciones.o
+release/reportes.o
+release/qrc_images.o
+release/moc_comprayventa.o
+release/moc_login.o
+release/moc_menu.o
+release/moc_operaciones.o
+release/moc_reportes.o

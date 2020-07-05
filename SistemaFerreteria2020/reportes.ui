@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Reportes</class>
+ <widget class="QWidget" name="Reportes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="ventana_reportes">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-83</y>
+     <width>1101</width>
+     <height>871</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Recursos/reportes-design.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_listaclientes">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>27</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Lista de clientes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_busquedaproductos">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Busqueda de productos</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_ventasperiodo">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>260</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ventas por periodo</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_productosreposicion">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>380</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Productos de reposición</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_listatrabajadores">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>491</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lista de trabajadores</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_listaproveedores">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>607</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lista de proveedores</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="id_regresardereportes">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>20</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Regresar</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Recursos/regreso.png</normaloff>../Recursos/regreso.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

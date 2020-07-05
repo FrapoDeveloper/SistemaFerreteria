@@ -20,6 +20,10 @@ private slots:
 
     void on_id_iralogin_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::Menu *ui;
 };

@@ -14,6 +14,8 @@ Operaciones::Operaciones(QWidget *parent) :
     ui->id_lineaproductos->setStyleSheet("* { background-color: rgb(29,98,105) }");
     ui->id_trabajadores->setStyleSheet("* { background-color: rgb(29,98,105) }");
     ui->id_regresarmenu->setStyleSheet("* { background-color: rgb(96,0,205) }");
+    setFixedSize(ui->ventana_operaciones->sizeHint());
+    setWindowTitle("Operaciones");
 
 }
 
@@ -24,7 +26,7 @@ Operaciones::~Operaciones()
 
 void Operaciones::on_id_regresarmenu_clicked()
 {
-    Menu * next = new Menu();
-    next->show();
+    Menu * regresar = new Menu();
+    regresar->show();
     close();
 }

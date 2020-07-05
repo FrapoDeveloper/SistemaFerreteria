@@ -2,6 +2,8 @@
 #include "ui_menu.h"
 #include "operaciones.h"
 #include "login.h"
+#include "comprayventa.h"
+#include "reportes.h"
 Menu::Menu(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Menu)
@@ -30,6 +32,22 @@ void Menu::on_pushButton_3_clicked()
 void Menu::on_id_iralogin_clicked()
 {
     Login * next = new Login();
+    next->show();
+
+    close();
+}
+
+void Menu::on_pushButton_2_clicked()
+{
+    ComprayVenta * next = new ComprayVenta();
+    next->show();
+
+    close();
+}
+
+void Menu::on_pushButton_clicked()
+{
+    Reportes * next = new Reportes();
     next->show();
 
     close();

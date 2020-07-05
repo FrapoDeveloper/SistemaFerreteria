@@ -16,20 +16,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    comprayventa.cpp \
     main.cpp \
     login.cpp \
     menu.cpp \
-    operaciones.cpp
+    operaciones.cpp \
+    reportes.cpp
 
 HEADERS += \
+    comprayventa.h \
     login.h \
     menu.h \
-    operaciones.h
+    operaciones.h \
+    reportes.h
 
 FORMS += \
+    comprayventa.ui \
     login.ui \
     menu.ui \
-    operaciones.ui
+    operaciones.ui \
+    reportes.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
