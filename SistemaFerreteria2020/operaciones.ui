@@ -47,7 +47,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Clientes</string>
+    <string>Registro de clientes</string>
    </property>
   </widget>
   <widget class="QPushButton" name="id_productos">
@@ -68,7 +68,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Productos</string>
+    <string>Registro de productos</string>
    </property>
   </widget>
   <widget class="QPushButton" name="id_proveedores">
@@ -89,7 +89,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Proveedores</string>
+    <string>Registro de proveedores</string>
    </property>
   </widget>
   <widget class="QPushButton" name="id_lineaproductos">
@@ -137,7 +137,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Trabajadores</string>
+    <string>Registro de trabajadores</string>
    </property>
   </widget>
   <widget class="QPushButton" name="id_regresarmenu">

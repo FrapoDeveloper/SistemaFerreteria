@@ -1,4 +1,6 @@
 release/comprayventa.o
+release/ferreteria.o
+release/lsedes.o
 release/main.o
 release/login.o
 release/menu.o

@@ -1,4 +1,6 @@
 debug/comprayventa.o
+debug/ferreteria.o
+debug/lsedes.o
 debug/main.o
 debug/login.o
 debug/menu.o

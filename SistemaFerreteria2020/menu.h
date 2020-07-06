@@ -2,7 +2,7 @@
 #define MENU_H
 
 #include <QWidget>
-
+#include "login.h"
 namespace Ui {
 class Menu;
 }
@@ -13,6 +13,9 @@ class Menu : public QWidget
 
 public:
     explicit Menu(QWidget *parent = nullptr);
+
+    void setNameUser(QString);
+
     ~Menu();
 
 private slots:
@@ -26,6 +29,7 @@ private slots:
 
 private:
     Ui::Menu *ui;
+    QString name_user_menu;
 };
 
 #endif // MENU_H

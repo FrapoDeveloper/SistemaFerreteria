@@ -26,6 +26,10 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *id_iralogin;
+    QLabel *nombre_ferreteria;
+    QLabel *tiempo_ferreteria;
+    QLabel *icon_user;
+    QLabel *name_user;
 
     void setupUi(QWidget *Menu)
     {
@@ -67,6 +71,32 @@ public:
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/cerrar-sesion.png"), QSize(), QIcon::Normal, QIcon::Off);
         id_iralogin->setIcon(icon);
+        nombre_ferreteria = new QLabel(Menu);
+        nombre_ferreteria->setObjectName(QString::fromUtf8("nombre_ferreteria"));
+        nombre_ferreteria->setGeometry(QRect(20, 20, 381, 41));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("Arial"));
+        font2.setPointSize(16);
+        font2.setBold(true);
+        font2.setWeight(75);
+        nombre_ferreteria->setFont(font2);
+        tiempo_ferreteria = new QLabel(Menu);
+        tiempo_ferreteria->setObjectName(QString::fromUtf8("tiempo_ferreteria"));
+        tiempo_ferreteria->setGeometry(QRect(20, 90, 381, 31));
+        tiempo_ferreteria->setFont(font2);
+        icon_user = new QLabel(Menu);
+        icon_user->setObjectName(QString::fromUtf8("icon_user"));
+        icon_user->setGeometry(QRect(800, 10, 61, 71));
+        icon_user->setPixmap(QPixmap(QString::fromUtf8(":/iniciouser.png")));
+        name_user = new QLabel(Menu);
+        name_user->setObjectName(QString::fromUtf8("name_user"));
+        name_user->setGeometry(QRect(860, 30, 141, 41));
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Arial"));
+        font3.setPointSize(12);
+        font3.setBold(true);
+        font3.setWeight(75);
+        name_user->setFont(font3);
 
         retranslateUi(Menu);
 
@@ -81,6 +111,10 @@ public:
         pushButton_2->setText(QCoreApplication::translate("Menu", "Ir", nullptr));
         pushButton_3->setText(QCoreApplication::translate("Menu", "Ir", nullptr));
         id_iralogin->setText(QCoreApplication::translate("Menu", "Cerrar Sesi\303\263n", nullptr));
+        nombre_ferreteria->setText(QString());
+        tiempo_ferreteria->setText(QString());
+        icon_user->setText(QString());
+        name_user->setText(QString());
     } // retranslateUi
 
 };

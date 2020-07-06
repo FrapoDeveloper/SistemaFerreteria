@@ -4,15 +4,31 @@
 #include "login.h"
 #include "comprayventa.h"
 #include "reportes.h"
+#include "ferreteria.h"
 Menu::Menu(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Menu)
+
 {
     ui->setupUi(this);
     setFixedSize(ui->ventana_menu->sizeHint());
-    setWindowTitle("Login");
+    setWindowTitle("Menu");
     ui->id_iralogin->setStyleSheet("* { background-color: rgb(96,0,205) }");
 
+    Ferreteria *ferreteria = new Ferreteria("Ferreteria Covid");
+    ferreteria->setTiempo("2 meses");
+
+    ui->nombre_ferreteria->setStyleSheet("QLabel {color: rgb(255,255,255) }");
+    ui->nombre_ferreteria->setText(ferreteria->getNombreFerreteria());
+    ui->tiempo_ferreteria->setStyleSheet("QLabel {color: rgb(255,255,255) }");
+    ui->tiempo_ferreteria->setText(ferreteria->getTiempo());
+    ui->name_user->setStyleSheet("QLabel {color: rgb(255,255,255) }");
+
+
+}
+
+void Menu::establecetitulo(QString user){
+    ui->name_user->setText(user);
 }
 
 Menu::~Menu()

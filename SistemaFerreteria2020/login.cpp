@@ -14,6 +14,7 @@ Login::Login(QWidget *parent)
     setWindowTitle("Login");
 
 
+
 }
 
 Login::~Login()
@@ -25,23 +26,15 @@ Login::~Login()
 void Login::on_id_ingresar_clicked()
 {
 
-   QString user = "admin2020";
-
    QString pass = "root123";
-
-    if( ui->name_user->text() == "" &&  ui->pass_user->text()==""){
-        ui->mensaje_error->setText("Debes ingresar los datos.");
-    }
-
-    if( ui->name_user->text() == user && ui->pass_user->text() == pass){
+    if(  ui->pass_user->text() == pass){
         Menu * next = new Menu();
+        next->establecetitulo(ui->name_user->text());
         next->show();
+
         close();
     }else{
            ui->mensaje_error->setText("Usuario o contaseña incorrecta.");
     }
-
-
-
 
 }

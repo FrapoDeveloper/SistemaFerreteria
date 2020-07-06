@@ -1,6 +1,6 @@
 #ifndef LOGIN_H
 #define LOGIN_H
-
+#include "QString"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -12,7 +12,9 @@ class Login : public QMainWindow
     Q_OBJECT
 
 public:
+
     Login(QWidget *parent = nullptr);
+
     ~Login();
 
 private slots:
@@ -20,5 +22,6 @@ private slots:
 
 private:
     Ui::Login *ui;
+
 };
 #endif // LOGIN_H

@@ -88,11 +88,11 @@ public:
     {
         Operaciones->setWindowTitle(QCoreApplication::translate("Operaciones", "Form", nullptr));
         ventana_operaciones->setText(QString());
-        id_clientes->setText(QCoreApplication::translate("Operaciones", "Clientes", nullptr));
-        id_productos->setText(QCoreApplication::translate("Operaciones", "Productos", nullptr));
-        id_proveedores->setText(QCoreApplication::translate("Operaciones", "Proveedores", nullptr));
+        id_clientes->setText(QCoreApplication::translate("Operaciones", "Registro de clientes", nullptr));
+        id_productos->setText(QCoreApplication::translate("Operaciones", "Registro de productos", nullptr));
+        id_proveedores->setText(QCoreApplication::translate("Operaciones", "Registro de proveedores", nullptr));
         id_lineaproductos->setText(QCoreApplication::translate("Operaciones", "Linea de productos", nullptr));
-        id_trabajadores->setText(QCoreApplication::translate("Operaciones", "Trabajadores", nullptr));
+        id_trabajadores->setText(QCoreApplication::translate("Operaciones", "Registro de trabajadores", nullptr));
         id_regresarmenu->setText(QCoreApplication::translate("Operaciones", "Regresar", nullptr));
     } // retranslateUi
 

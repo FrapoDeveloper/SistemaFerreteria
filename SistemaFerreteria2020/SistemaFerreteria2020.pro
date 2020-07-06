@@ -17,6 +17,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     comprayventa.cpp \
+    ferreteria.cpp \
+    lsedes.cpp \
     main.cpp \
     login.cpp \
     menu.cpp \
@@ -25,7 +27,9 @@ SOURCES += \
 
 HEADERS += \
     comprayventa.h \
+    ferreteria.h \
     login.h \
+    lsedes.h \
     menu.h \
     operaciones.h \
     reportes.h
