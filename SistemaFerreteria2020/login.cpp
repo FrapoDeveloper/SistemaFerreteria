@@ -29,7 +29,7 @@ void Login::on_id_ingresar_clicked()
    QString pass = "root123";
     if(  ui->pass_user->text() == pass){
         Menu * next = new Menu();
-        next->establecetitulo(ui->name_user->text());
+        next->setNameUser(ui->name_user->text());
         next->show();
 
         close();

@@ -11,6 +11,8 @@ Menu::Menu(QWidget *parent) :
 
 {
     ui->setupUi(this);
+    ventana_operaciones = new Operaciones();
+    QObject::connect(ventana_operaciones,SIGNAL(back()),this,SLOT(esconder()));
     setFixedSize(ui->ventana_menu->sizeHint());
     setWindowTitle("Menu");
     ui->id_iralogin->setStyleSheet("* { background-color: rgb(96,0,205) }");
@@ -27,10 +29,14 @@ Menu::Menu(QWidget *parent) :
 
 }
 
-void Menu::establecetitulo(QString user){
+void Menu::setNameUser(QString user){
     ui->name_user->setText(user);
 }
 
+void Menu::esconder(){
+    this->setVisible(true);
+    ventana_operaciones->setVisible(false);
+}
 Menu::~Menu()
 {
     delete ui;
@@ -38,11 +44,8 @@ Menu::~Menu()
 
 void Menu::on_pushButton_3_clicked()
 {
-    Operaciones * next = new Operaciones();
-    next->show();
-
-    close();
-
+    this->setVisible(false);
+    ventana_operaciones->setVisible(true);
 }
 
 void Menu::on_id_iralogin_clicked()

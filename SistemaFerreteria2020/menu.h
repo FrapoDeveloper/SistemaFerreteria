@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "login.h"
+#include "operaciones.h"
 namespace Ui {
 class Menu;
 }
@@ -16,9 +17,11 @@ public:
 
     void setNameUser(QString);
 
+
     ~Menu();
 
 private slots:
+    void esconder();
     void on_pushButton_3_clicked();
 
     void on_id_iralogin_clicked();
@@ -29,7 +32,7 @@ private slots:
 
 private:
     Ui::Menu *ui;
-    QString name_user_menu;
+    Operaciones *ventana_operaciones;
 };
 
 #endif // MENU_H

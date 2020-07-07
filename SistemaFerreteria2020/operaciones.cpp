@@ -26,7 +26,5 @@ Operaciones::~Operaciones()
 
 void Operaciones::on_id_regresarmenu_clicked()
 {
-    Menu * regresar = new Menu();
-    regresar->show();
-    close();
+    emit(back());
 }

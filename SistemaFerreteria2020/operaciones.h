@@ -14,7 +14,8 @@ class Operaciones : public QWidget
 public:
     explicit Operaciones(QWidget *parent = nullptr);
     ~Operaciones();
-
+signals:
+    void back();
 private slots:
     void on_id_regresarmenu_clicked();
 
