@@ -7,6 +7,9 @@ Operaciones::Operaciones(QWidget *parent) :
     ui(new Ui::Operaciones)
 {
     ui->setupUi(this);
+    ventana_registrocliente = new Registro_cliente();
+
+    QObject::connect(ventana_registrocliente,SIGNAL(back_operaciones()),this,SLOT(solo_operaciones()));
     //ui->id_clientes->setStyleSheet("* { background-color: rgb(144,220,219) }");
     ui->id_clientes->setStyleSheet("* { background-color: rgb(29,98,105) }");
     ui->id_productos->setStyleSheet("* { background-color: rgb(29,98,105) }");
@@ -24,7 +27,17 @@ Operaciones::~Operaciones()
     delete ui;
 }
 
+void Operaciones::solo_operaciones(){
+    this->setVisible(true);
+    ventana_registrocliente->setVisible(false);
+}
 void Operaciones::on_id_regresarmenu_clicked()
 {
-    emit(back());
+    emit(back_menu());
+}
+
+void Operaciones::on_id_clientes_clicked()
+{
+    this->setVisible(false);
+    ventana_registrocliente->setVisible(true);
 }

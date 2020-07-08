@@ -6,6 +6,7 @@ release/login.o
 release/menu.o
 release/operaciones.o
 release/reportes.o
+release/sede.o
 release/qrc_images.o
 release/moc_comprayventa.o
 release/moc_login.o

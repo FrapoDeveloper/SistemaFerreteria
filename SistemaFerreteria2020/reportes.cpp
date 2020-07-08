@@ -26,7 +26,5 @@ Reportes::~Reportes()
 
 void Reportes::on_id_regresardereportes_clicked()
 {
-    Menu * regresar = new Menu();
-    regresar->show();
-    close();
+   emit(back_menu());
 }

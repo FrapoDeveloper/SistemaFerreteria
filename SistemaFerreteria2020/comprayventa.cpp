@@ -24,7 +24,5 @@ ComprayVenta::~ComprayVenta()
 
 void ComprayVenta::on_id_regresardecomprayventa_clicked()
 {
-    Menu * regresar = new Menu();
-    regresar->show();
-    close();
+    emit(back_menu());
 }

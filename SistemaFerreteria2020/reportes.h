@@ -14,7 +14,8 @@ class Reportes : public QWidget
 public:
     explicit Reportes(QWidget *parent = nullptr);
     ~Reportes();
-
+signals:
+    void back_menu();
 private slots:
     void on_id_regresardereportes_clicked();
 

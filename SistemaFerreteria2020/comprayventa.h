@@ -14,7 +14,8 @@ class ComprayVenta : public QWidget
 public:
     explicit ComprayVenta(QWidget *parent = nullptr);
     ~ComprayVenta();
-
+signals:
+    void back_menu();
 private slots:
     void on_id_regresardecomprayventa_clicked();
 

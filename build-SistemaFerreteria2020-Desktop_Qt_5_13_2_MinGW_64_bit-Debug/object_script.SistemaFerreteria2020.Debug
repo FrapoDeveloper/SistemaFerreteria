@@ -6,6 +6,7 @@ debug/login.o
 debug/menu.o
 debug/operaciones.o
 debug/reportes.o
+debug/sede.o
 debug/qrc_images.o
 debug/moc_comprayventa.o
 debug/moc_login.o

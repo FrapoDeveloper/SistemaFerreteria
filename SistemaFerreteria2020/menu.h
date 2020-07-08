@@ -4,6 +4,8 @@
 #include <QWidget>
 #include "login.h"
 #include "operaciones.h"
+#include "reportes.h"
+#include "comprayventa.h"
 namespace Ui {
 class Menu;
 }
@@ -21,7 +23,7 @@ public:
     ~Menu();
 
 private slots:
-    void esconder();
+    void solo_menu();
     void on_pushButton_3_clicked();
 
     void on_id_iralogin_clicked();
@@ -33,6 +35,9 @@ private slots:
 private:
     Ui::Menu *ui;
     Operaciones *ventana_operaciones;
+    Reportes *ventana_reportes;
+    ComprayVenta *ventana_comprayventa;
+
 };
 
 #endif // MENU_H

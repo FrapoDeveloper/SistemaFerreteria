@@ -1,6 +1,14 @@
 #include "lsedes.h"
+#include "QDebug"
+Lsedes::Lsedes(Sede *sedes)
+{
+    this->lista_sedes = sedes->getNombreSede();
+}
 
-Lsedes::Lsedes()
+QString Lsedes::getListaSedes(){
+    return lista_sedes;
+}
+Lsedes::~Lsedes()
 {
 
 }
